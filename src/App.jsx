@@ -8,6 +8,7 @@ import posterPink from "./assets/poster-pink.png";
 import aboutBg from "./assets/about-section.png";
 import comboBg from "./assets/combo-layout-old.png";
 import ticketRender from "./assets/ticket-render.png";
+import footerBg from "./assets/footer-section.png";
 
 function App() {
   const [modal, setModal] = useState(null);
@@ -158,7 +159,112 @@ const formatPrice = (price) => {
         ĐẶT VÉ
       </button>
     </div>
-  </section>
+    </section>
+
+    <footer
+      className="footer-section"
+      style={{ backgroundImage: `url(${footerBg})` }}
+    >
+      {/* Các vùng click bên trái */}
+      <a
+        className="footer-click help-buy"
+        href="#combo"
+        title="Làm thế nào để mua vé?"
+      />
+
+      <a
+        className="footer-click my-ticket"
+        href="#combo"
+        title="Vé của tôi đâu?"
+      />
+
+      <button
+        className="footer-click use-ticket"
+        title="Cách sử dụng vé điện tử?"
+        onClick={() =>
+          alert("Vé điện tử sẽ được gửi qua email sau khi đặt vé thành công.")
+        }
+      />
+
+      <button
+        className="footer-click help-center"
+        title="Trung tâm trợ giúp"
+        onClick={() =>
+          alert("Bạn có thể liên hệ support@ticketmelon.com để được hỗ trợ.")
+        }
+      />
+
+      {/* Dành cho nhà tổ chức */}
+      <button
+        className="footer-click solution"
+        title="Giải pháp của chúng tôi"
+        onClick={() =>
+          alert("Giải pháp tổ chức sự kiện gồm bán vé, quản lý đơn hàng và check-in.")
+        }
+      />
+
+      <button
+        className="footer-click pricing"
+        title="Giá cả"
+        onClick={() =>
+          alert("Vui lòng liên hệ Ticketmelon để nhận báo giá chi tiết.")
+        }
+      />
+
+      <a
+        className="footer-click contact-us"
+        href="mailto:support@ticketmelon.com"
+        title="Liên hệ với chúng tôi"
+      />
+
+      {/* Hỗ trợ khách hàng */}
+      <a
+        className="footer-click email-support"
+        href="mailto:support@ticketmelon.com"
+        title="Email hỗ trợ"
+      />
+
+      <a
+        className="footer-click line-support"
+        href="https://line.me/R/ti/p/@ticketmelon"
+        target="_blank"
+        rel="noreferrer"
+        title="Line Ticketmelon"
+      />
+
+      <a
+        className="footer-click facebook-support"
+        href="https://www.facebook.com/Ticketmelon"
+        target="_blank"
+        rel="noreferrer"
+        title="Facebook Ticketmelon"
+      />
+
+      <a
+        className="footer-click phone-support"
+        href="tel:+6620263068"
+        title="Gọi hỗ trợ"
+      />
+
+      {/* Hợp pháp */}
+      <button
+        className="footer-click terms"
+        title="Điều khoản"
+        onClick={() => alert("Điều khoản sử dụng đang được cập nhật.")}
+      />
+
+      <button
+        className="footer-click policy"
+        title="Chính sách"
+        onClick={() => alert("Chính sách bảo mật đang được cập nhật.")}
+      />
+
+      <button
+        className="footer-click privacy"
+        title="Bảo vệ"
+        onClick={() => alert("Thông tin bảo vệ người dùng đang được cập nhật.")}
+      />
+    </footer>
 
     </>
   );
