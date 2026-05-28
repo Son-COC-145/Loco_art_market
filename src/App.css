@@ -52,18 +52,26 @@ body {
 
 .hero-poster-blue {
   position: absolute;
-  left: 48.5%;
-  top: 35%;
-  width: 19%;
+  left: 48%;
+  top: 34%;
+  height: 46%;
+  width: auto;
+
+  transform: scale(0.93);
+
   cursor: pointer;
   z-index: 11;
 }
 
 .hero-poster-pink {
   position: absolute;
-  left: 69%;
-  top: 35%;
-  width: 19%;
+  left: 68%;
+  top: 34%;
+  height: 46%;
+  width: auto;
+
+  transform: scale(0.9);
+
   cursor: pointer;
   z-index: 11;
 }
@@ -74,10 +82,15 @@ body {
   transition: transform 0.25s ease;
 }
 
-.hero-lanyard:hover,
-.hero-poster-blue:hover,
+.hero-lanyard:hover{
+  transform: scale(1.01);
+}
+.hero-poster-blue:hover {
+  transform: scale(1.03);
+}
+
 .hero-poster-pink:hover {
-  transform: scale(1.04);
+  transform: scale(1);
 }
 
 /* modal đăng nhập / đăng ký */
@@ -140,8 +153,8 @@ body {
 
 /* zoom ảnh */
 .zoom-overlay img {
-  max-width: 85vw;
-  max-height: 88vh;
+  max-width: 120vw;
+  max-height: 120vh;
   object-fit: contain;
 }
 
