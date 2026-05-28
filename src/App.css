@@ -13,8 +13,8 @@ body {
   position: relative;
   width: 100vw;
   aspect-ratio: 16 / 9;
-  background-size: cover;
-  background-position: center top;
+  background-size: 100% 100%;
+  background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -43,27 +43,27 @@ body {
 /* ảnh chi tiết */
 .hero-lanyard {
   position: absolute;
-  left: 25%;
-  top: 60%;
-  width: 23%;
+  left: 20%;
+  top: 50%;
+  width: 30%;
   cursor: pointer;
   z-index: 10;
 }
 
 .hero-poster-blue {
   position: absolute;
-  left: 49.7%;
-  top: 40.3%;
-  width: 16.5%;
+  left: 49%;
+  top: 35%;
+  width: 19%;
   cursor: pointer;
   z-index: 11;
 }
 
 .hero-poster-pink {
   position: absolute;
-  left: 69.9%;
-  top: 40.4%;
-  width: 18.2%;
+  left: 69%;
+  top: 35%;
+  width: 19%;
   cursor: pointer;
   z-index: 11;
 }
