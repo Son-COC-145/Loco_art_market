@@ -503,66 +503,73 @@ body {
   }
 
   .ticket-counter {
-    width: 120px;
-    padding: 5px 6px;
-    border-radius: 8px;
+    width: 29%;
+    padding: 4px;
+    border-radius: 6px;
+  }
+
+  .ticket-counter-info {
+    gap: 0;
   }
 
   .ticket-counter-info strong {
-    font-size: 10px;
+    font-size: 2.2vw;
   }
 
   .ticket-counter-info span {
-    font-size: 8px;
+    font-size: 1.8vw;
   }
 
   .ticket-counter-actions {
-    gap: 4px;
+    gap: 3px;
   }
 
   .ticket-counter-actions button {
-    width: 18px;
-    height: 18px;
-    font-size: 13px;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .ticket-counter-actions span {
-    font-size: 10px;
-    min-width: 10px;
+    font-size: 2.2vw;
+    min-width: 12px;
   }
 
   .counter-single {
-    left: 9%;
+    left: 4%;
     top: 51%;
   }
 
   .counter-combo1 {
-    left: 9%;
+    left: 4%;
     top: 81%;
   }
 
   .counter-combo2 {
-    right: 10%;
+    right: 4%;
     top: 51%;
   }
 
   .counter-combo3 {
-    right: 10%;
+    right: 4%;
     top: 81%;
   }
 
   .combo-total-box {
     bottom: 3%;
     padding: 6px 10px;
-    gap: 6px;
-    border-radius: 10px;
-    font-size: 10px;
+    gap: 8px;
+    border-radius: 8px;
+    font-size: 2.5vw;
   }
 
   .combo-total-box button {
-    padding: 5px 8px;
-    border-radius: 7px;
-    font-size: 10px;
+    padding: 2px 1px;
+    border-radius: 6px;
+    font-size: 1.5vw;
   }
 
   .footer-click {
