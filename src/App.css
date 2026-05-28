@@ -152,3 +152,156 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* =========================
+   PHẦN 3 - COMBO VÉ
+========================= */
+
+.combo-section {
+  position: relative;
+  width: 100vw;
+  aspect-ratio: 16 / 9;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+.combo-ticket-img {
+  position: absolute;
+  left: 34.5%;
+  top: 25%;
+  width: 31%;
+  cursor: pointer;
+  z-index: 5;
+  transition: transform 0.25s ease;
+}
+
+.combo-ticket-img:hover {
+  transform: scale(1.03);
+}
+
+.ticket-counter {
+  position: absolute;
+  z-index: 20;
+
+  width: 250px;
+  padding: 10px 12px;
+
+  background: rgba(232, 62, 130, 0.95);
+  border: 2px solid #2e3192;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: monospace;
+  color: white;
+}
+
+.ticket-counter-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ticket-counter-info strong {
+  font-size: 15px;
+}
+
+.ticket-counter-info span {
+  font-size: 12px;
+}
+
+.ticket-counter-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ticket-counter-actions button {
+  width: 26px;
+  height: 26px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ffe45c;
+  color: #2e3192;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.ticket-counter-actions span {
+  min-width: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* đặt từng cụm +/- ở mép dưới mỗi box, tránh đè chữ */
+
+.counter-single {
+  left: 9.4%;
+  top: 51%;
+}
+
+.counter-combo1 {
+  left: 9.4%;
+  top: 81%;
+}
+
+.counter-combo2 {
+  right: 10.8%;
+  top: 51%;
+}
+
+.counter-combo3 {
+  right: 10.8%;
+  top: 81%;
+}
+
+.combo-total-box {
+  position: absolute;
+  left: 50%;
+  bottom: 5.2%;
+
+  transform: translateX(-50%);
+
+  z-index: 25;
+
+  padding: 12px 22px;
+  border-radius: 16px;
+
+  background: rgba(255, 228, 92, 0.96);
+  color: #2e3192;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.combo-total-box strong {
+  color: #e83e82;
+}
+
+.combo-total-box button {
+  border: none;
+  border-radius: 10px;
+
+  padding: 8px 14px;
+
+  background: #e83e82;
+  color: white;
+
+  font-weight: bold;
+  cursor: pointer;
+}
