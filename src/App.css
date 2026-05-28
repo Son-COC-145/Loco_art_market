@@ -454,3 +454,119 @@ body {
   width: 8%;
   height: 3%;
 }
+
+
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .hero-section,
+  .about-section,
+  .combo-section,
+  .footer-section {
+    width: 100vw;
+    min-height: auto;
+    aspect-ratio: 16 / 9;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+
+  .hero-lanyard {
+    left: 25%;
+    top: 60%;
+    width: 23%;
+  }
+
+  .hero-poster-blue {
+    left: 48%;
+    top: 34%;
+    height: 46%;
+    width: auto;
+    transform: scale(0.93);
+  }
+
+  .hero-poster-pink {
+    left: 68%;
+    top: 34%;
+    height: 46%;
+    width: auto;
+    transform: scale(0.9);
+  }
+
+  .combo-ticket-img {
+    left: 34.5%;
+    top: 25%;
+    width: 31%;
+  }
+
+  .ticket-counter {
+    width: 120px;
+    padding: 5px 6px;
+    border-radius: 8px;
+  }
+
+  .ticket-counter-info strong {
+    font-size: 10px;
+  }
+
+  .ticket-counter-info span {
+    font-size: 8px;
+  }
+
+  .ticket-counter-actions {
+    gap: 4px;
+  }
+
+  .ticket-counter-actions button {
+    width: 18px;
+    height: 18px;
+    font-size: 13px;
+  }
+
+  .ticket-counter-actions span {
+    font-size: 10px;
+    min-width: 10px;
+  }
+
+  .counter-single {
+    left: 9%;
+    top: 51%;
+  }
+
+  .counter-combo1 {
+    left: 9%;
+    top: 81%;
+  }
+
+  .counter-combo2 {
+    right: 10%;
+    top: 51%;
+  }
+
+  .counter-combo3 {
+    right: 10%;
+    top: 81%;
+  }
+
+  .combo-total-box {
+    bottom: 3%;
+    padding: 6px 10px;
+    gap: 6px;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+
+  .combo-total-box button {
+    padding: 5px 8px;
+    border-radius: 7px;
+    font-size: 10px;
+  }
+
+  .footer-click {
+    transform: scale(0.75);
+    transform-origin: top left;
+  }
+}
